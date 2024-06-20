@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <p>Welcome to <%= title %>
+  </p>
+</body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+
+  var data = {
+    type: 'post',
+    url: 'https://siciva.naturalva.co.id/auth',
+    data: {
+      username: 'Masrurotul166',
+      password: `Masrurotul166`
+    }
+  }
+  socket.emit('PostData', 'siciva', data);
+</script>
+
+</html>

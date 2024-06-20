@@ -1,3 +1,9 @@
+# PUSHER SICIVA
+
+## How to run
+
 ```
-npm start
+npm install && npm start
 ```
+
+##

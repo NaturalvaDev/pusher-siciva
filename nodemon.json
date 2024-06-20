@@ -1,0 +1,16 @@
+{
+  "watch": [
+    "config",
+    "controllers",
+    "helpers",
+    "auth",
+    "middlewares",
+    "routes",
+    "storage",
+    "models",
+    "views",
+    "views/partials"
+  ],
+  "ext": ".js,.html,.css,.ejs",
+  "ignore": ["public"]
+}
